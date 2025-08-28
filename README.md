@@ -1,96 +1,96 @@
-# Delivery Time Prediction – Prédire intelligemment le temps de livraison
+# Delivery Time Prediction – Smart Delivery Time Forecasting
 
-Un projet d'intelligence artificielle appliquée au monde réel, développé avec [Khalid Abouelfaraj], visant à prédire avec précision le **temps de livraison** à partir de données historiques, tout en exploitant un pipeline de machine learning complet, robuste et déployé.
-
----
-
-## 🚀 Objectifs du projet
-
-Dans les domaines du **e-commerce**, de la **logistique**, de la **restauration** ou des **livraisons express**, prédire correctement le temps de livraison permet de :
-
-- Améliorer la **satisfaction client** grâce à des délais plus précis
-- Optimiser la **gestion des ressources humaines et logistiques**
-- Réduire les **coûts** liés aux retards ou à la mauvaise planification
-- Fournir des **prévisions exploitables** dans les dashboards décisionnels
+A real-world artificial intelligence project, developed with [Khalid Abouelfaraj], aiming to accurately **predict delivery time** from historical data, while leveraging a complete, robust, and deployed machine learning pipeline.
 
 ---
 
-## Pipeline complet du projet
+## 🚀 Project Objectives
 
-### 1. Collecte des données
-- Plus de **40 000 observations réelles**
-- Données historiques liées aux livraisons (localisation, météo, trafic, etc.)
+In fields such as **e-commerce**, **logistics**, **food delivery**, or **express shipping**, accurate delivery time prediction helps to:
 
-### 2. Nettoyage & Prétraitement
-- Correction d’erreurs **syntaxiques et sémantiques**
-- Détection et traitement des **valeurs aberrantes** (outliers)
-- Imputation **intelligente des valeurs manquantes** via :
-  - `KNNImputer`
-  - Autres techniques sans suppression automatique
-
-### 3. Feature Engineering & Sélection
-- Création de **nouvelles variables explicatives**
-- Sélection des features les plus significatives avec des **tests statistiques** :
-  - Corrélation pour les variables **quantitatives**
-  - Test **ANOVA** pour les variables **qualitatives**
-
-### 4. Préparation des données
-- **Z-score scaling** des variables numériques
-- **One-hot encoding** des variables catégorielles
-- Réduction de dimensionnalité avec **ACP (PCA)** + analyse exploratoire :
-  - Étude de la **distribution**, **symétrie**, etc.
-
-### 5. 🤖 Entraînement des modèles
-- Modèles testés :
-  - `LinearRegression`
-  - `KNeighborsRegressor`
-  - `SVR`
-  - `RandomForestRegressor`
-  - `XGBoostRegressor`
-- Le modèle **XGBoost** s’est révélé **le plus performant** sur notre jeu de test
-
-### 6. Déploiement avec Streamlit
-- Création d’une **interface web interactive**
-- Permet aux utilisateurs (livreurs, managers, plateformes...) de **prédire en temps réel** le temps de livraison à partir de nouvelles entrées
+- Improve **customer satisfaction** with more precise estimates  
+- Optimize **human and logistical resource management**  
+- Reduce **costs** related to delays or poor planning  
+- Provide **actionable forecasts** in decision-making dashboards  
 
 ---
 
-## Résultats
+## Complete Project Pipeline
 
-- Meilleur modèle : `XGBoostRegressor`
-- Évaluation avec le **coefficient de détermination R²**
-- Excellente **généralisation sur les données test**
+### 1. Data Collection
+- Over **40,000 real observations**  
+- Historical delivery data including location, weather, traffic, etc.  
+
+### 2. Cleaning & Preprocessing
+- Correction of **syntactic and semantic errors**  
+- Detection and handling of **outliers**  
+- Intelligent imputation of missing values using:  
+  - `KNNImputer`  
+  - Other techniques (no automatic deletion of rows)  
+
+### 3. Feature Engineering & Selection
+- Creation of **new explanatory variables**  
+- Selection of the most significant features using **statistical tests**:  
+  - Correlation for **quantitative variables**  
+  - **ANOVA test** for **qualitative variables**  
+
+### 4. Data Preparation
+- **Z-score scaling** for numerical features  
+- **One-hot encoding** for categorical features  
+- Dimensionality reduction with **PCA** + exploratory analysis:  
+  - Study of **distribution**, **skewness**, etc.  
+
+### 5. 🤖 Model Training
+- Models tested:  
+  - `LinearRegression`  
+  - `KNeighborsRegressor`  
+  - `SVR`  
+  - `RandomForestRegressor`  
+  - `XGBoostRegressor`  
+- The **XGBoost** model proved to be the **most efficient** on our test dataset  
+
+### 6. Deployment with Streamlit
+- Built an **interactive web interface**  
+- Allows users (couriers, managers, platforms...) to **predict delivery times in real-time** based on new inputs  
 
 ---
 
-## Technologies utilisées
+## Results
 
-- Python (pandas, numpy, matplotlib, seaborn)
-- Scikit-learn
-- XGBoost
-- Streamlit
-- Jupyter Notebooks
+- Best model: `XGBoostRegressor`  
+- Evaluation using the **R² score**  
+- Excellent **generalization on test data**  
 
 ---
 
-## Ce que ce projet démontre
+## Technologies Used
 
-- Ma capacité à construire un pipeline IA **complet de A à Z**
-- Mon savoir-faire en **analyse de données**, **modélisation** et **déploiement**
-- Ma volonté de **résoudre des problèmes métiers concrets à fort impact**
-- Ma **collaboration efficace en équipe**
-
----
-
-## Opportunités & Collaboration
-
-💬 **Vous travaillez dans la logistique, la livraison ou le transport ?**
-Je suis passionné par l’**innovation utile** et cherche à mettre mes compétences au service de projets à impact.  
-➡️ N’hésitez pas à me contacter pour discuter de potentielles **collaborations ou applications concrètes** de ce système !
+- Python (pandas, numpy, matplotlib, seaborn)  
+- Scikit-learn  
+- XGBoost  
+- Streamlit  
+- Jupyter Notebooks  
 
 ---
 
-## Interface – Aperçu
+## What This Project Demonstrates
+
+- My ability to build a **full end-to-end AI pipeline**  
+- My expertise in **data analysis**, **modeling**, and **deployment**  
+- My commitment to solving **real-world business problems with impact**  
+- My **effective teamwork and collaboration skills**  
+
+---
+
+## Opportunities & Collaboration
+
+💬 **Are you working in logistics, delivery, or transportation?**  
+I am passionate about **practical innovation** and eager to apply my skills to impactful projects.  
+➡️ Feel free to reach out to discuss potential **collaborations or real-world applications** of this system!  
+
+---
+
+## Interface – Preview
 
 ![image](https://github.com/user-attachments/assets/c442cdb7-ed13-434b-b627-0344dfb7e2fd)
 
